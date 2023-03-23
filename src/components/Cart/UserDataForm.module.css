@@ -1,0 +1,28 @@
+.input {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid rgba(27, 23, 23, 0.267);
+  border-radius: 12px;
+  margin-top: 0.4rem;
+  transition-duration: 0.3s;
+}
+
+input.input:focus {
+  outline: none !important;
+  border: 1px solid #8a2b06;
+}
+
+.label {
+  display: block;
+  font-size: 16px;
+  margin-top: 0.8rem;
+}
+.mb {
+  margin-bottom: 1.3rem;
+}
+
+.error {
+  color: red;
+}
