@@ -52,10 +52,14 @@ const Cart = (props) => {
 
     axios
       .post("https://jsonplaceholder.typicode.com/posts", crtData)
-      .then((response) => console.log(response));
+      .then((response) => {
+        console.log(response);
+      });
     setInp1Value("");
     setInp2Value("");
     setFormChanger(false);
+    props.onClose();
+    cartCtx.clearCart();
   };
   const orderClickHandler = (e) => {
     if (e.target.innerHTML === "Order") {
