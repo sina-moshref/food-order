@@ -11,9 +11,10 @@ function App() {
     setCatIsShown(true);
   };
 
-  const hideCartHandler = () => {
+  const hideCartHandler = (submited, userName) => {
     setCatIsShown(false);
   };
+
   return (
     <CartProvider>
       {cartIsShown && <Cart onClose={hideCartHandler} />}

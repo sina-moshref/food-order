@@ -58,8 +58,11 @@ const Cart = (props) => {
     setInp1Value("");
     setInp2Value("");
     setFormChanger(false);
-    props.onClose();
+    props.onClose("submited", inp1Value);
     cartCtx.clearCart();
+    setTimeout(() => {
+      alert(`dear ${inp1Value}, your order submited successfully`);
+    }, 500);
   };
   const orderClickHandler = (e) => {
     if (e.target.innerHTML === "Order") {
